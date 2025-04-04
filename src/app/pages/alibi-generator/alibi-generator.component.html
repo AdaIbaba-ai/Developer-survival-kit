@@ -1,0 +1,33 @@
+<div style="max-width: 800px; margin: 60px auto; text-align: center">
+  <h2 style="font-size: 2.5rem">🧍 The Alibi Generator</h2>
+
+  <p style="font-size: 1.2rem; margin-top: 20px">
+    Did you miss the daily standup? Forget to reply to that Jira ticket from
+    last week? Need a totally professional excuse to cover up an obvious
+    disaster? You're in the right place. Click below to receive your certified
+    dev alibi.
+  </p>
+
+  <button style="margin-top: 25px" (click)="generateExcuse()">
+    🎤 Generate My Alibi
+  </button>
+
+  <div
+    *ngIf="excuse"
+    style="
+      margin-top: 40px;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-size: 1.6rem;
+      font-weight: bold;
+    "
+  >
+    {{ excuse }}
+    <br />
+    <button style="margin-top: 15px" (click)="copyExcuse()">
+      📋 Copy Alibi
+    </button>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div *ngIf="!showChampion" style="text-align: center; margin-top: 40px">
+  <h2 style="font-size: 2.5rem">🔥 Meme Battle Royale 🔥</h2>
+
+  <p
+    style="
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      margin-top: 20px;
+    "
+  >
+    Two memes enter. One meme leaves. Click the one that made you laugh harder.
+    At the end, only one meme shall reign as the ultimate champion.
+  </p>
+
+  <div class="container">
+    <div class="card" (click)="vote(currentChampion)">
+      <img [src]="'assets/' + memes[currentChampion]" alt="Champion Meme" />
+      <p style="margin-top: 10px">Vote for this meme 🏆</p>
+    </div>
+
+    <div class="card" (click)="vote(nextChallenger)">
+      <img [src]="'assets/' + memes[nextChallenger]" alt="Challenger Meme" />
+      <p style="margin-top: 10px">Vote for this meme ⚔️</p>
+    </div>
+  </div>
+</div>
+
+<!-- Final Champion Display -->
+<div *ngIf="showChampion" class="champion-card">
+  <h2>🏆 The Meme Champion Has Been Chosen! 🏆</h2>
+  <img [src]="'assets/' + memes[currentChampion]" width="400" />
+  <p style="font-size: 1.3rem; margin-top: 20px">
+    All others fell in battle. This meme rules them all.
+  </p>
+</div>
