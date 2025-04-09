@@ -1,32 +1,66 @@
-<div>
-  <h1>💼 Dev Survival Kit</h1>
-  <h3 style="text-align: center; font-style: italic">
-    Absolutely Essential Tools for Every Struggling Coder
-  </h3>
-</div>
+<div class="hero">
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/dev-icon.png" alt="Dev Survival Logo" />
+      <span>Dev Survival Kit</span>
+    </div>
+    <button class="get-started">Get Started</button>
+  </header>
 
-<div class="container">
-  <div class="card">
-    <h2>🤯 I’m stuck, I need help</h2>
-    <p>Magic 8-Ball for Devs</p>
-    <button routerLink="/magic-8ball">Ask the 8-Ball</button>
+  <div class="intro">
+    <h1>Your Emergency Dev Toolkit! 🚀</h1>
+    <p>
+      Feeling stuck? Bored? Overwhelmed by bugs? We've got your back.<br />
+      Grab your survival tools below!
+    </p>
+    <img src="assets/dev-avatar.png" alt="Dev Avatar" class="avatar" />
   </div>
 
-  <div class="card">
-    <h2>🤭 Alibi Generator</h2>
-    <p>The Excuse-o-Matic 3000</p>
-    <button routerLink="/alibi-generator">Generate Excuse</button>
+  <div class="tool-grid">
+    <div class="tool-card" (click)="navigate('meme-battle')">
+      <span class="icon">🔥</span>
+      <h2>Meme Battle Royale</h2>
+      <p>
+        Battle it out with the finest collection of dev memes. Vote, share, and
+        laugh!
+      </p>
+    </div>
+
+    <div class="tool-card" (click)="navigate('alibi-generator')">
+      <span class="icon">💼</span>
+      <h2>Excuse-o-Matic 3000</h2>
+      <p>
+        Generate professional-sounding excuses for missed deadlines instantly!
+      </p>
+    </div>
+
+    <div class="tool-card" (click)="navigate('magic8ball')">
+      <span class="icon">🎱</span>
+      <h2>Magic 8-Ball for Devs</h2>
+      <p>Should you deploy on Friday? Ask the all-knowing Magic 8-Ball!</p>
+    </div>
+
+    <div class="tool-card" (click)="navigate('joke-machine')">
+      <span class="icon">😂</span>
+      <h2>Random Dev Joke Machine</h2>
+      <p>Need a quick laugh? We've got an infinite supply of dev humor!</p>
+    </div>
   </div>
 
-  <div class="card">
-    <h2>🥱 I’m bored</h2>
-    <p>Meme Battle Royale</p>
-    <button routerLink="/meme-battle">Start Battle</button>
+  <div class="quote-box">
+    <blockquote>
+      “There are only two hard things in Computer Science: cache invalidation
+      and naming things.”
+      <footer>– Phil Karlton</footer>
+    </blockquote>
   </div>
 
-  <div class="card">
-    <h2>😉 Random Dev Joke Machine</h2>
-    <p>Because your sanity deserves a break</p>
-    <button routerLink="/joke-machine">Get a Dev Joke</button>
-  </div>
+  <footer class="footer">
+    <p>Made by devs, for devs 💻</p>
+    <div class="socials">
+      <img src="assets/github.svg" />
+      <img src="assets/discord.svg" />
+      <img src="assets/twitter.svg" />
+    </div>
+  </footer>
 </div>
