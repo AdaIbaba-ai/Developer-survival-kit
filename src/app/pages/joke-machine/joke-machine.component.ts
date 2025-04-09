@@ -21,7 +21,7 @@ export class JokeMachineComponent {
   }
 
   fetchJoke() {
-    const url = `https://v2.jokeapi.dev/joke/${this.selectedCategory}?type=single,twopart`;
+    const url = `https://v2.jokeapi.dev/joke/${this.selectedCategory}?type=single,twopart&blacklistFlags=nsfw,religious,sexist,explicit`;
 
     this.http.get<any>(url).subscribe({
       next: (res) => {
