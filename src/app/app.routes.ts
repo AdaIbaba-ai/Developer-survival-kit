@@ -3,10 +3,12 @@ import { HomeComponent } from './pages/home/home.component';
 import { Magic8ballComponent } from './pages/magic8ball/magic8ball.component';
 import { AlibiGeneratorComponent } from './pages/alibi-generator/alibi-generator.component';
 import { MemeBattleComponent } from './pages/meme-battle/meme-battle.component';
+import { JokeMachineComponent } from './pages/joke-machine/joke-machine.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'magic-8ball', component: Magic8ballComponent },
   { path: 'alibi-generator', component: AlibiGeneratorComponent },
   { path: 'meme-battle', component: MemeBattleComponent },
+  { path: 'joke-machine', component: JokeMachineComponent },
 ];

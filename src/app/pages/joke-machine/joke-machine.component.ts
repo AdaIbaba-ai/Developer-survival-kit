@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-joke-machine',
   imports: [],
   templateUrl: './joke-machine.component.html',
-  styleUrl: './joke-machine.component.css'
+  styleUrl: './joke-machine.component.css',
 })
-export class JokeMachineComponent {
-
-}
+export class JokeMachineComponent {}
