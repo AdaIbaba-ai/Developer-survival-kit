@@ -12,10 +12,15 @@ body {
 }
 
 .navbar {
+  width: 100%;
+  background-color: #7c3aed;
+  color: white;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  position: relative;
+  z-index: 10;
 }
 
 .logo {
@@ -38,6 +43,9 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+}
+.get-started:hover {
+  background-color: #f3e8ff;
 }
 
 .intro {
@@ -111,20 +119,20 @@ body {
 
 .quote-box footer {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .footer {
+  width: 100%;
+  background-color: #7c3aed;
+  color: white;
   text-align: center;
-  padding: 40px 0;
-  color: #374151;
+  padding: 40px 20px;
+  font-family: "Fredoka", sans-serif;
 }
 
-.socials {
+.footer-logo {
+  width: 740px;
+  height: auto;
   margin-top: 10px;
-}
-
-.socials img {
-  width: 24px;
-  margin: 0 5px;
 }
