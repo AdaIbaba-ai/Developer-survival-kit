@@ -1,1 +1,54 @@
-<p>joke-machine works!</p>
+<div style="max-width: 800px; margin: 50px auto; text-align: center">
+  <h2 style="font-size: 2.5rem">😉 Random Dev Joke Machine</h2>
+
+  <p style="font-size: 1.2rem; margin-bottom: 20px">
+    Feeling stuck? Burned out? Fetch a joke and survive another sprint.
+  </p>
+
+  <label for="category" style="font-weight: bold">Choose Category:</label>
+  <select
+    [(ngModel)]="selectedCategory"
+    id="category"
+    style="margin-left: 10px"
+  >
+    <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+  </select>
+
+  <br /><br />
+  <button (click)="fetchJoke()">🎲 Get Joke</button>
+
+  <div
+    *ngIf="joke"
+    style="
+      margin-top: 40px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      white-space: pre-line;
+      font-size: 1.2rem;
+    "
+  >
+    {{ joke }}
+    <br /><br />
+    <button (click)="saveFavorite()">⭐ Save to Favorites</button>
+  </div>
+
+  <div *ngIf="favorites.length > 0" style="margin-top: 60px">
+    <h3>⭐ Favorite Jokes</h3>
+    <ul style="list-style: none; padding: 0">
+      <li
+        *ngFor="let fav of favorites"
+        style="
+          background: #fafafa;
+          margin: 10px 0;
+          padding: 10px;
+          border-radius: 8px;
+        "
+      >
+        {{ fav }}
+      </li>
+    </ul>
+    <button (click)="clearFavorites()">🗑️ Clear Favorites</button>
+  </div>
+</div>
