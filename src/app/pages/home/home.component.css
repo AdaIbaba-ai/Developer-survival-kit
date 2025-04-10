@@ -1,14 +1,78 @@
 body {
   margin: 0;
   font-family: "Fredoka", sans-serif;
-  background: linear-gradient(90deg, #ede9fe, #fdf2f8 50%, #dbeafe);
+  background: linear-gradient(180deg, #ede9fe 0%, #fdf2f8 50%, #dbeafe 100%);
+  position: relative;
+  overflow-x: hidden;
 }
 
 .hero {
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 40px 20px;
+  background: none;
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  background: linear-gradient(90deg, #ede9fe 0%, #fdf2f8 50%, #dbeafe 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+.bug {
+  top: 100px;
+  left: 200px;
+}
+
+.rocket {
+  top: 300px;
+  right: 200px;
+}
+.coffee {
+  top: 500px;
+  left: 600px;
+}
+
+.keyboard {
+  bottom: 700px;
+  right: 300px;
+}
+
+.code {
+  bottom: 1000px;
+  left: 200px;
+}
+
+.floating-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  opacity: 0.5;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Optional fun float animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Optional fun float animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .navbar {
