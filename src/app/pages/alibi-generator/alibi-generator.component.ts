@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './alibi-generator.component.html',
+  styleUrls: ['./alibi-generator.component.css'],
 })
 export class AlibiGeneratorComponent {
   excuses: string[] = [

@@ -1,19 +1,148 @@
-.container {
+.bug {
+  top: 100px;
+  left: 200px;
+}
+
+.rocket {
+  top: 300px;
+  right: 200px;
+}
+.coffee {
+  top: 500px;
+  left: 400px;
+}
+
+.keyboard {
+  bottom: 700px;
+  right: 300px;
+}
+
+.code {
+  bottom: 200px;
+  left: 200px;
+}
+
+.floating-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  opacity: 0.5;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #6b21a8;
+  margin-top: 40px;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #374151;
+}
+
+.battle-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
-
-.card {
-  background: #f9f9f9;
-  padding: 20px;
+.meme-card {
+  width: 380px;
+  background: #fff;
   border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card:hover {
+.meme-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.15);
+}
+
+.meme-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.vote {
+  margin: 16px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 85%;
+}
+
+.vote:hover {
   transform: scale(1.05);
+}
+
+.vote.purple {
+  background: #8b5cf6;
+}
+
+.vote.pink {
+  background: #ec4899;
+}
+
+.vs-badge {
+  align-self: center;
+  font-size: 1rem;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  color: white;
+  border-radius: 9999px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-box {
+  max-width: 600px;
+  background: white;
+  border-radius: 16px;
+  margin: 60px auto 20px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  text-align: center;
+  color: #374151;
 }
