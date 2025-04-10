@@ -27,8 +27,8 @@
   </p>
 
   <div class="alibi-card">
-    <button (click)="generateExcuse()" class="alibi-generate-btn">
-      🛠 Generate My Alibi
+    <button class="generate-btn" (click)="generateExcuse()">
+      ⚡ Generate My Alibi
     </button>
 
     <p *ngIf="excuse" class="alibi-output">{{ excuse }}</p>

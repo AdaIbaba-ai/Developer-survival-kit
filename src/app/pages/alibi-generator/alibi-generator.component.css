@@ -92,20 +92,21 @@
   margin: 0 auto 50px;
 }
 
-.alibi-generate-btn {
-  background: linear-gradient(90deg, #6366f1, #3b82f6);
+.generate-btn {
+  background: linear-gradient(to right, #6366f1, #ec4899);
   color: white;
-  border: none;
-  border-radius: 12px;
   padding: 12px 24px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  margin-bottom: 20px;
+  border-radius: 999px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.alibi-generate-btn:hover {
-  transform: translateY(-2px);
+.generate-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(236, 72, 153, 0.6);
 }
 
 .alibi-output {
