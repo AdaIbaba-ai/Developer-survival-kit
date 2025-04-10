@@ -7,7 +7,7 @@ import { JokeMachineComponent } from './pages/joke-machine/joke-machine.componen
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'magic-8ball', component: Magic8ballComponent },
+  { path: 'magic8ball', component: Magic8ballComponent },
   { path: 'alibi-generator', component: AlibiGeneratorComponent },
   { path: 'meme-battle', component: MemeBattleComponent },
   { path: 'joke-machine', component: JokeMachineComponent },
