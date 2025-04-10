@@ -81,7 +81,7 @@
 .alibi-subtext {
   color: #4b5563;
   margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .alibi-card {
@@ -111,7 +111,7 @@
 
 .alibi-output {
   color: #374151;
-  font-size: 16px;
+  font-size: 25px;
   margin: 20px 0;
   padding: 12px;
   font-weight: 500;
@@ -123,7 +123,7 @@
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   color: #111827;
 }
 
