@@ -22,60 +22,78 @@
     class="floating-icon coffee"
     alt="Coffee"
   />
-
-  <div class="intro">
-    <h1>Your Emergency Dev Toolkit! 🚀</h1>
-    <p>
-      Feeling stuck? Bored? Overwhelmed by bugs? We've got your back.<br />
-      Grab your survival tools below!
-    </p>
-    <img src="assets/dev-avatar.png" alt="Dev Avatar" class="avatar" />
-  </div>
-
-  <div class="tool-grid">
-    <div class="tool-card" (click)="navigate('meme-battle')">
-      <img src="assets/icons/meme.logo.jpg" alt="Meme Icon" class="tool-icon" />
-      <h2>Meme Battle Royale</h2>
+  <div class="anti-hero">
+    <div class="intro">
+      <h1>Your Emergency Dev Toolkit! 🚀</h1>
       <p>
-        Battle it out with the finest collection of dev memes. Vote, share, and
-        laugh!
+        Feeling stuck? Bored? Overwhelmed by bugs? We've got your back.<br />
+        Grab your survival tools below!
       </p>
+      <img src="assets/dev-avatar.png" alt="Dev Avatar" class="avatar" />
     </div>
 
-    <div class="tool-card" (click)="navigate('alibi-generator')">
-      <img src="assets/icons/excuse.jpg" alt="Alibi Icon" class="tool-icon" />
-      <h2>Excuse-o-Matic 3000</h2>
-      <p>
-        Generate professional-sounding excuses for missed deadlines instantly!
-      </p>
+    <div class="tool-grid">
+      <div class="tool-card" (click)="navigate('meme-battle')">
+        <img
+          src="assets/icons/meme.logo.jpg"
+          alt="Meme Icon"
+          class="tool-icon"
+        />
+        <h2>Meme Battle Royale</h2>
+        <p>
+          Battle it out with the finest collection of dev memes. Vote, share,
+          and laugh!
+        </p>
+      </div>
+
+      <div class="tool-card" (click)="navigate('alibi-generator')">
+        <img src="assets/icons/excuse.jpg" alt="Alibi Icon" class="tool-icon" />
+        <h2>Excuse-o-Matic 3000</h2>
+        <p>
+          Generate professional-sounding excuses for missed deadlines instantly!
+        </p>
+      </div>
+
+      <div class="tool-card" (click)="navigate('magic8ball')">
+        <img
+          src="assets/icons/magic.jpg"
+          alt="Magic 8 - ball Icon"
+          class="tool-icon"
+        />
+        <h2>Magic 8-Ball for Devs</h2>
+        <p>Should you deploy on Friday? Ask the all-knowing Magic 8-Ball!</p>
+      </div>
+
+      <div class="tool-card" (click)="navigate('joke-machine')">
+        <img src="assets/icons/jokes.jpg" alt="Jokes Icon" class="tool-icon" />
+        <h2>Random Dev Joke Machine</h2>
+        <p>Need a quick laugh? We've got an infinite supply of dev humor!</p>
+      </div>
+
+      <div class="tool-card" (click)="navigate('what-to-do')">
+        <img
+          src="assets/icons/roulette.png"
+          alt="Roulette Icon"
+          class="tool-icon"
+        />
+        <h2>What To Do Roulette</h2>
+        <p>
+          Not sure what to do next? Spin the wheel of dev fate and let chaos
+          decide!
+        </p>
+      </div>
     </div>
 
-    <div class="tool-card" (click)="navigate('magic8ball')">
-      <img
-        src="assets/icons/magic.jpg"
-        alt="Magic 8 - ball Icon"
-        class="tool-icon"
-      />
-      <h2>Magic 8-Ball for Devs</h2>
-      <p>Should you deploy on Friday? Ask the all-knowing Magic 8-Ball!</p>
-    </div>
-
-    <div class="tool-card" (click)="navigate('joke-machine')">
-      <img src="assets/icons/jokes.jpg" alt="Jokes Icon" class="tool-icon" />
-      <h2>Random Dev Joke Machine</h2>
-      <p>Need a quick laugh? We've got an infinite supply of dev humor!</p>
+    <div class="quote-box">
+      <blockquote>
+        “Debugging is like being the detective in a crime movie where you are
+        also the murderer.”
+        <footer>– Filipe Fortes</footer>
+      </blockquote>
     </div>
   </div>
-
-  <div class="quote-box">
-    <blockquote>
-      “Debugging is like being the detective in a crime movie where you are also
-      the murderer.”
-      <footer>– Filipe Fortes</footer>
-    </blockquote>
-  </div>
+  <footer class="footer">
+    <p>Made by devs, for devs 💻</p>
+    <img src="assets/Developer.png" alt="footer logo" class="footer-logo" />
+  </footer>
 </div>
-<footer class="footer">
-  <p>Made by devs, for devs 💻</p>
-  <img src="assets/Developer.png" alt="footer logo" class="footer-logo" />
-</footer>

@@ -1,0 +1,20 @@
+<div class="wheel-container">
+  <!-- The spinning wheel -->
+  <div class="wheel" [style.transform]="'rotate(' + currentRotation + 'deg)'">
+    <canvas #wheelCanvas width="600" height="600"></canvas>
+  </div>
+
+  <!-- Spin button with pointer arrow to the right -->
+  <button class="spin-button" (click)="spinWheel()" [disabled]="isSpinning">
+    SPIN
+  </button>
+</div>
+
+<!-- Result popup -->
+<div class="result-popup" *ngIf="selectedTask">
+  <h2>Congratulations!</h2>
+  <p>
+    You got:
+    <strong>{{ selectedTask.emoji }} {{ selectedTask.label }}</strong>
+  </p>
+</div>

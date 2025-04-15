@@ -1,26 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+
 .bug {
-  top: 100px;
-  left: 200px;
+  top: 10vh;
+  left: 50vw;
+  z-index: -1;
 }
 
 .rocket {
-  top: 300px;
-  right: 200px;
+  top: 10vh;
+  right: 10vw;
 }
 .coffee {
-  top: 500px;
-  left: 500px;
+  top: 50vh;
+  left: 25vw;
 }
 
 .keyboard {
-  bottom: 200px;
-  right: 300px;
+  bottom: 20vh;
+  right: 20vw;
 }
 
 .code {
-  bottom: 100px;
-  left: 200px;
+  bottom: 10vh;
+  left: 10vw;
 }
 .floating-icon {
   position: absolute;
