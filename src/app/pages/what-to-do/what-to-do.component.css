@@ -1,6 +1,64 @@
 /************************************
  * Layout & Container
  ************************************/
+.floating-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+  animation: float 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+.bug {
+  top: 10vh;
+  left: 10vw;
+}
+
+.rocket {
+  top: 20vh;
+  right: 10vw;
+}
+.coffee {
+  top: 50vh;
+  right: 30vw;
+}
+
+.keyboard {
+  bottom: 10vh;
+  right: 10vw;
+}
+
+.code {
+  bottom: 25vh;
+  left: 25vw;
+}
+
+/* Optional fun float animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Optional fun float animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 :host {
   display: block;
   min-height: 100vh;
@@ -62,7 +120,7 @@ canvas {
   content: "";
   position: absolute;
   top: 50%;
-  right: -25px; /* arrow to the right */
+  right: -25px;
   transform: translateY(-50%);
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
