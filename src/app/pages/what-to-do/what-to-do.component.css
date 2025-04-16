@@ -59,6 +59,21 @@
     transform: translateY(0);
   }
 }
+
+.title {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #6b21a8;
+  margin-top: 40px;
+}
+subtitle {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #374151;
+}
+
 :host {
   display: block;
   min-height: 100vh;
@@ -145,21 +160,12 @@ canvas {
 }
 
 /************************************
- * No tasks
- ************************************/
-.no-tasks {
-  margin-top: 1rem;
-  font-size: 1.3rem;
-  color: #1f2937;
-}
-
-/************************************
  * Result popup
  ************************************/
 .result-popup {
   display: inline-block;
-  margin-top: 3rem;
-  padding: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
   background: #fff;
   color: #1f2937;
   border-radius: 12px;
