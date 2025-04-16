@@ -23,44 +23,58 @@ export class MemeBattleComponent {
     'meme11.jpg',
     'meme12.jpg',
     'meme13.jpg',
+    'meme14.jpg',
+    'meme15.jpg',
+    'meme16.jpg',
+    'meme17.jpg',
+    'meme18.jpg',
+    'meme19.jpg',
+    'meme20.jpg',
+    'meme21.jpg',
+    'meme22.jpg',
+    'meme23.jpg',
+    'meme24.jpg',
+    'meme25.jpg',
   ];
-  round = 0;
+
+  shuffledIndices: number[] = [];
   currentChampion = 0;
   nextChallenger = 1;
-  usedMemes: Set<number> = new Set(); //  track which memes we've already shown
+  currentIndex = 2;
+  round = 0;
   showChampion = false;
 
   constructor() {
-    this.usedMemes.add(this.currentChampion);
-    this.usedMemes.add(this.nextChallenger);
+    this.shuffleMemes();
+  }
+
+  shuffleMemes() {
+    const indices = Array.from(this.memes.keys()); // [0, 1, 2, ..., 24]
+    this.shuffledIndices = this.shuffleArray(indices);
+    this.currentChampion = this.shuffledIndices[0];
+    this.nextChallenger = this.shuffledIndices[1];
+    this.currentIndex = 2;
+  }
+
+  shuffleArray(array: number[]): number[] {
+    return array.sort(() => Math.random() - 0.5); // Simple shuffle
   }
 
   vote(winner: number) {
     this.round++;
 
-    // If it's the last round, show the final champ
-    if (this.usedMemes.size >= this.memes.length) {
+    // Final round
+    if (this.currentIndex >= this.shuffledIndices.length) {
       this.currentChampion = winner;
       this.showChampion = true;
       return;
     }
 
-    // The winner becomes the new champ
+    // Winner becomes champion
     this.currentChampion = winner;
 
-    // Find a new unused challenger
-    let newChallenger: number;
-    const available = this.memes
-      .map((_, i) => i)
-      .filter((i) => !this.usedMemes.has(i) && i !== this.currentChampion);
-
-    if (available.length === 0) {
-      this.showChampion = true;
-      return;
-    }
-
-    newChallenger = available[Math.floor(Math.random() * available.length)];
-    this.nextChallenger = newChallenger;
-    this.usedMemes.add(newChallenger);
+    // Load next challenger from shuffled list
+    this.nextChallenger = this.shuffledIndices[this.currentIndex];
+    this.currentIndex++;
   }
 }

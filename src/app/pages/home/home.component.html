@@ -32,8 +32,31 @@
       <img src="assets/dev-avatar.png" alt="Dev Avatar" class="avatar" />
     </div>
 
-    <div class="tool-grid">
-      <div class="tool-card" (click)="navigate('meme-battle')">
+    <div class="featured-section">
+      <div class="featured-card trending" (click)="navigate('joke-machine')">
+        <img src="assets/icons/jokes.jpg" alt="Jokes Icon" class="tool-icon" />
+        <div class="badge trending">🔥 Trending</div>
+        <h2>Random Dev Joke Machine</h2>
+        <p>Need a quick laugh? We've got an infinite supply of dev humor!</p>
+      </div>
+
+      <div class="featured-card new" (click)="navigate('what-to-do')">
+        <img
+          src="assets/icons/roulette.png"
+          alt="Roulette Icon"
+          class="tool-icon"
+        />
+        <div class="badge new">❇️ New</div>
+        <h2>What To Do Roulette</h2>
+        <p>
+          Not sure what to do next? Spin the wheel of dev fate and let chaos
+          decide!
+        </p>
+      </div>
+    </div>
+
+    <div class="tool-grid small-grid">
+      <div class="tool-card small" (click)="navigate('meme-battle')">
         <img
           src="assets/icons/meme.logo.jpg"
           alt="Meme Icon"
@@ -46,41 +69,26 @@
         </p>
       </div>
 
-      <div class="tool-card" (click)="navigate('alibi-generator')">
-        <img src="assets/icons/excuse.jpg" alt="Alibi Icon" class="tool-icon" />
+      <div class="tool-card small" (click)="navigate('alibi-generator')">
+        <img
+          src="assets/icons/excuse.jpg"
+          alt="Excuse Icon"
+          class="tool-icon"
+        />
         <h2>Excuse-o-Matic 3000</h2>
         <p>
           Generate professional-sounding excuses for missed deadlines instantly!
         </p>
       </div>
 
-      <div class="tool-card" (click)="navigate('magic8ball')">
+      <div class="tool-card small" (click)="navigate('magic8ball')">
         <img
           src="assets/icons/magic.jpg"
-          alt="Magic 8 - ball Icon"
+          alt="Magic 8 Ball Icon"
           class="tool-icon"
         />
         <h2>Magic 8-Ball for Devs</h2>
         <p>Should you deploy on Friday? Ask the all-knowing Magic 8-Ball!</p>
-      </div>
-
-      <div class="tool-card" (click)="navigate('joke-machine')">
-        <img src="assets/icons/jokes.jpg" alt="Jokes Icon" class="tool-icon" />
-        <h2>Random Dev Joke Machine</h2>
-        <p>Need a quick laugh? We've got an infinite supply of dev humor!</p>
-      </div>
-
-      <div class="tool-card" (click)="navigate('what-to-do')">
-        <img
-          src="assets/icons/roulette.png"
-          alt="Roulette Icon"
-          class="tool-icon"
-        />
-        <h2>What To Do Roulette</h2>
-        <p>
-          Not sure what to do next? Spin the wheel of dev fate and let chaos
-          decide!
-        </p>
       </div>
     </div>
 
