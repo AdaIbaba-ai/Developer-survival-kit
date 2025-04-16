@@ -54,7 +54,9 @@ export class JokeMachineComponent {
     this.rating = value;
   }
   fetchJoke() {
-    const url = `https://v2.jokeapi.dev/joke/${this.selectedCategory}?type=single,twopart&safe-mode`;
+    //const url = `https://v2.jokeapi.dev/joke/${this.selectedCategory}`; //unsafe mode
+    const url = `https://v2.jokeapi.dev/joke/${this.selectedCategory}?type=single,twopart&safe-mode`; //safe mode
+
     this.http.get<any>(url).subscribe({
       next: (res) => {
         if (res.type === 'single') {
