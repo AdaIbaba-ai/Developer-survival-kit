@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/Developer-survival-kit": {},
+    "/Developer-survival-kit/alibi-generator": {},
+    "/Developer-survival-kit/joke-machine": {},
+    "/Developer-survival-kit/magic8ball": {},
+    "/Developer-survival-kit/meme-battle": {},
+    "/Developer-survival-kit/what-to-do": {}
+  }
+}
